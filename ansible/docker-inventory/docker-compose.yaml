@@ -1,0 +1,20 @@
+version: "3.0"
+
+services:
+  tryme-1:
+    container_name: tryme-1
+    image: ubuntu_sshd
+    ports:
+      - "5001:22"
+
+  tryme-2:
+    container_name: tryme-2
+    image: ubuntu_sshd
+    ports: 
+      - "5002:22"
+
+  tryme-3:
+    container_name: tryme-3
+    image: ubuntu_sshd
+    ports: 
+      - "5003:22"

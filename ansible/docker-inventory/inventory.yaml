@@ -1,0 +1,16 @@
+all:
+  vars:
+    ansible_host: localhost
+    ansible_user: root
+    ansible_password: pass
+
+docker:
+  hosts:
+    tryme-1:
+      ansible_port: 5001
+
+    tryme-2:
+      ansible_port: 5002
+
+    tryme-3:
+      ansible_port: 5003
